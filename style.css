@@ -1,0 +1,86 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    padding: 1rem;
+    color: hsl(0,0%,100%);
+    font-family: "Overpass";
+}
+
+h2,h3{
+    margin: 0;
+}
+
+article{
+    max-width: 400px;
+    background: hsl(213,19%,18%);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+p{
+    margin:0;
+}
+
+button{
+    display: inline-block;
+    width: 100%;
+    border: none;
+    padding: .75rem 1rem;
+    border-radius: 2rem;
+    background: hsl(25,97%,53%);
+    color: hsl(0,0%,100%);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+button:hover{
+    background: hsl(0, 0%, 100%) ;
+    color: hsl(25,97%,53%);
+    cursor: pointer;
+}
+
+article > *+*{
+    margin-top:1rem;
+}
+
+div{
+    font-size: 0;
+    text-align-last: justify;
+}
+
+span{
+    display: inline-block;
+    font-size: 1rem;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    position:relative;
+    background: hsla(217,12%,63%,15%);
+    color: hsla(217,12%,63%,100%);
+}
+
+div span:hover{
+    color:hsl(0,0%,100%);
+    background: hsl(217,12%,63%);
+    cursor: pointer;
+}
+
+span b, span img{
+    position:absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.selected.note{
+    background: hsl(25,97%,53%);
+    color:hsl(0,0%,100%);
+}
+
+.feedback{
+    text-align: center;
+}
