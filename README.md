@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://everezze.github.io/rating-component/](https://your-live-site-url.com)
 
 ## My process
 Html first, getting the structure in a way to have less css possible.
@@ -41,8 +41,7 @@ Html first, getting the structure in a way to have less css possible.
 Adding elements to a specific place in the DOM.
 
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+feedbackComponent.insertBefore(titleNote,document.getElementsByTagName("h2")["1"]); 
 }
 ```
 
