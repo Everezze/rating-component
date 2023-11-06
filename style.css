@@ -12,6 +12,19 @@ h2,h3{
     margin: 0;
 }
 
+h3{
+    font-size: .8rem;
+    color: hsl(25,97%,53%);
+}
+
+h3 > b{
+    background: hsla(217,12%,63%,15%);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 400;
+    display: inline-block;
+}
+
 article{
     max-width: 400px;
     background: hsl(213,19%,18%);
@@ -21,6 +34,8 @@ article{
 
 p{
     margin:0;
+    color: hsla(217,12%,63%,100%);
+    line-height: 1.5rem;
 }
 
 button{
@@ -83,4 +98,5 @@ span b, span img{
 
 .feedback{
     text-align: center;
+    display:none;
 }

@@ -1,7 +1,14 @@
 const noteContainer = document.querySelector("div");
-const chosenNote= document.createElement("div");
+const titleNote= document.createElement("h3");
+const chosenNote = document.createElement("b");
 const submitButton= document.getElementsByTagName("button")["0"];
+const feedbackComponent = document.querySelector(".feedback");
+const ratingComponent = document.querySelector("body article");
+//console.log(ratingComponent);
+//console.log(feedbackComponent);
 //console.log(submitButton);
+//console.log(chosenNote);
+titleNote.append(chosenNote);
 let currentNote = undefined;
 
 noteContainer.addEventListener("click", function(event){
@@ -31,6 +38,10 @@ noteContainer.addEventListener("click", function(event){
 });
 
 submitButton.addEventListener("click",function(){
-    chosenNote.textContent = currentNote.firstElementChild.textContent;
+    chosenNote.textContent = `You selected ${currentNote.firstElementChild.textContent} out of 5`;
     //console.log(chosenNote.textContent);
+    feedbackComponent.insertBefore(titleNote,document.getElementsByTagName("h2")["1"]);
+    //console.log(document.getElementsByTagName("h2")[1]);
+    ratingComponent.style.display = "none";
+    feedbackComponent.style.display = "block";
 });
